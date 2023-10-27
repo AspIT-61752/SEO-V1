@@ -13,6 +13,10 @@
   --color-forms-button: #4c4d52;
   --color-forms-bg: #2b353f;
 
+  /* SEO Colors */
+  --color-quotes-start: hsl(225, 15%, 95%);
+  --color-quotes-end: hsl(225, 45%, 75%);
+
   --color-icon: #83e800;
 }
 
@@ -300,6 +304,10 @@ textarea:focus {
   width: auto;
 }
 
+.seo-main-container {
+  background-color: var(--color-light-gray);
+}
+
 .input-field {
   background-color: var(--color-light-gray);
   width: 88%;
@@ -326,6 +334,27 @@ textarea:focus {
 
 .submit-form {
   background-color: var(--color-forms-button);
+}
+
+/* SEO */
+.quote-wrapper {
+  background-color: var(--color-forms-border);
+  margin: 0 2vw;
+  padding: 1%;
+
+  border-radius: 0.2em;
+}
+
+.quote-image {
+  width: 100%;
+}
+
+.quote-start {
+  color: var(--color-quotes-start);
+}
+
+.quote-end {
+  color: var(--color-quotes-end);
 }
 
 /* ?    I'll make it even by

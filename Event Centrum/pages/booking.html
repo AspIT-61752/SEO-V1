@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO META -->
+    <meta name="description" content="Bookning af fest til privat eller for virksomheder">
+    <meta name="keywords" content="booking, event booking">
+
     <!-- Font Awesome 4.7.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,23 +25,117 @@
                 <img src="../icons/logo1.png" alt="Event Centrum Logo">
             </a>
             <ul>
-                <li><a href="../index.html" target="_blank" rel="noopener noreferrer" class="hover-anim">Forside</a>
+                <li><a href="../index.html" target="_self" rel="noopener noreferrer" class="hover-anim">Forside</a>
                 </li>
-                <li><a href="./booking.html" target="_blank" rel="noopener noreferrer" class="hover-anim">Events</a>
+                <li><a href="#" target="_self" rel="noopener noreferrer" class="hover-anim">Events</a>
                 </li>
-                <li><a href="#" class="hover-anim">Referencer</a></li>
-                <li><a href="./kontakt.html" target="_blank" rel="noopener noreferrer" class="hover-anim">Kontakt</a>
+                <li><a href="./referencer.html" target="_self" rel="noopener noreferrer"
+                        class="hover-anim">Referencer</a>
+                </li>
+                <li><a href="./referencer.html" class="hover-anim">Referencer</a></li>
+                <li><a href="./kontakt.html" target="_self" rel="noopener noreferrer" class="hover-anim">Kontakt</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="seo-main-container">
         <h1>Booking af event</h1>
         <h2>DJ, fest, klovn. Vi har det hele, så book nu!</h2>
         <p></p>
 
     </main>
+
+    <!-- Contact -->
+    <footer id="footer" class="flex-right-wrapper">
+        <!-- Info -->
+        <article id="contact-information" class="flex50">
+            <h1>Kontakt os</h1>
+            <p>
+                Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og
+                værdien for deltagerne.
+            </p>
+
+            <!-- Contact info -->
+            <div class="contact-links">
+                <!-- Address -->
+                <span class="flex-right-wrapper contact-wrapper">
+                    <div class="contact-icon-container">
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <!-- <img src="./icons/d.png" alt="Lokalition ikon"> -->
+                    <a href="https://www.google.com/maps/place/Ydesvej+5,+8500+Grenå/" target="_blank">
+                        <h5>Adresse</h5>
+                        <p>Ydesvej 5, 8500 Grenå</p>
+                    </a>
+                </span>
+
+                <!-- Telephone -->
+                <span class="flex-right-wrapper contact-wrapper">
+                    <!-- #83e800 -->
+                    <div class="contact-icon-container">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <!-- <img src="./icons/c.png" alt="Telefon ikon"> -->
+                    <a href="tel:+45-85-85-85-85">
+                        <h5>Ring til os</h5>
+                        <p>Tlf. 85 85 85 85</p>
+                    </a>
+                </span>
+
+                <!-- Mail -->
+                <span class="flex-right-wrapper contact-wrapper">
+                    <div class="contact-icon-container">
+                        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <a href="mailto:info@eventcentrum.dk">
+                        <h5>Send en mail</h5>
+                        <p>info@eventcentrum.dk</p>
+                    </a>
+                </span>
+            </div>
+        </article>
+
+        <!-- Field -->
+        <article id="contact" class="flex50">
+            <div class="input-field">
+                <p>Send os en besked</p>
+                <form>
+
+                    <!-- Name -->
+                    <p>
+                        <label for="fullName">Fulde Navn</label>
+                        <input class="contact-forms" type="text" id="fullName" name="fullName" placeholder="John Doe"
+                            required>
+                    </p>
+
+                    <!-- Email -->
+                    <p>
+                        <label for="email">Email</label>
+                        <input class="contact-forms" type="email" name="email" id="email"
+                            placeholder="john-doe@gmail.com" required>
+                    </p>
+
+                    <!-- msg -->
+                    <p>
+                        <label for="userMsg">Send os en besked</label><br>
+                        <!-- TODO: Edit cols and rows to CSS width and height -->
+                        <textarea class="contact-forms" name="userMsg" id="userMsg" cols="40" rows="6"
+                            placeholder="Din besked" required></textarea>
+                    </p>
+
+                    <!-- Submit -->
+                    <button class="contact-forms submit-form" type="submit" value="Send">
+                        <span class="flex-wrapper just-cont">
+                            <i class="fa fa-envelope-o fa-2x" aria-hidden="true">
+                            </i>
+                            <p class="center-height"> Send</p>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </article>
+    </footer>
 
 </body>
 
