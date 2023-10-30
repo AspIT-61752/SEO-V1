@@ -345,16 +345,35 @@ textarea:focus {
   border-radius: 0.2em;
 }
 
+.quote-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+
+  /* I hate p tags */
+  text-decoration: none;
+}
+
 .quote-image {
   width: 100%;
+  flex-direction: column;
 }
 
 .quote-start {
   color: var(--color-quotes-start);
+  font-size: larger;
+  border-bottom: #76d1fe solid;
+  margin-bottom: 1vh;
+  /* width: 81%; */
 }
 
 .quote-end {
   color: var(--color-quotes-end);
+  text-align: center;
+  /* border-top: #76d1fe solid; */
+  /* margin-top: 1vh; */
+  /* padding-top: 6%; */
+  /* width: 19%; */
 }
 
 /* ?    I'll make it even by
